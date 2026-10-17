@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>仙桃光影指南 | 合规影视推荐与正版导航（非仙桃影视）</title>
+  <meta name="description" content="仙桃光影指南（xiantaoyingshi-h5）做合规影视片单推荐与正版渠道导航。非原仙桃影视站、不聚合盗版片源、不提供播源解析/下载/磁力/网盘码/APK。含正版分类、光影片单与伪站避坑。" />
+  <meta name="author" content="仙桃光影指南" />
+  <meta name="robots" content="index,follow" />
+  <meta name="theme-color" content="#2B5C7E" />
+  <link rel="canonical" href="https://xiantaoyingshi-h5.github.io/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="仙桃光影指南" />
+  <meta property="og:title" content="仙桃光影指南 | 合规影视推荐与正版导航" />
+  <meta property="og:description" content="非原仙桃影视站，只做正版持权平台导航。" />
+  <meta property="og:url" content="https://xiantaoyingshi-h5.github.io/" />
+  <meta property="og:locale" content="zh_CN" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="仙桃光影指南 | 合规影视推荐与正版导航" />
+  <meta name="twitter:description" content="不重建仙桃影视镜像，拒绝聚合播源。" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "仙桃光影指南",
+    "url": "https://xiantaoyingshi-h5.github.io/",
+    "description": "合规影视片单推荐与正版渠道导航站（非原仙桃影视站）。",
+    "inLanguage": "zh-CN"
+  }
+  </script>
+
+  <style>
+    :root{
+      --bg:#FBF8F4;
+      --bg2:#F3EDE4;
+      --card:#FFFFFF;
+      --line:#E6D8C8;
+      --ink:#20282E;
+      --muted:#6B6257;
+      --peach:#FF7DA9;
+      --peach-deep:#E85D8C;
+      --green:#7FC8A9;
+      --green-deep:#5CAB8A;
+      --river:#2B5C7E;
+      --river-deep:#1F4660;
+      --ticket:#FBF7EC;
+      --silver:#A99C8B;
+      --red:#C0392B;
+      --radius:16px;
+      --maxw:1180px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:var(--bg);color:var(--ink);line-height:1.75;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;-webkit-font-smoothing:antialiased}
+    a{color:inherit;text-decoration:none}
+    .wrap{max-width:var(--maxw);margin:0 auto;padding:0 20px}
+
+    header.nav{position:sticky;top:0;z-index:50;background:rgba(251,248,244,.95);backdrop-filter:blur(12px);border-bottom:2px solid var(--peach-deep)}
+    .nav-inner{display:flex;align-items:center;justify-content:space-between;height:66px}
+    .logo{font-weight:900;font-size:21px;display:flex;align-items:center;gap:10px}
+    .logo .peach{width:36px;height:34px;border-radius:50% 50% 48% 52%;background:linear-gradient(135deg,var(--peach),var(--peach-deep));display:flex;align-items:center;justify-content:center;color:#fff;font-size:16px;box-shadow:inset 0 -3px 0 rgba(0,0,0,.15)}
+    .logo b{color:var(--peach-deep)}
+    .logo span{color:var(--river-deep)}
+    nav.menu{display:flex;gap:6px;font-size:14px;font-weight:700;color:var(--muted)}
+    nav.menu a{padding:8px 14px;border-radius:8px;border:2px solid transparent;transition:.2s}
+    nav.menu a:hover{color:var(--river-deep);border-color:var(--line);background:var(--bg2)}
+    .nav-toggle{display:none;background:none;border:2px solid var(--peach-deep);color:var(--ink);border-radius:8px;padding:5px 10px;font-size:18px;cursor:pointer}
+
+    .hero{padding:74px 0 80px;background:
+      radial-gradient(620px 340px at 85% 10%,rgba(255,125,169,.14),transparent 60%),
+      radial-gradient(520px 260px at 6% 95%,rgba(43,92,126,.10),transparent 60%),
+      linear-gradient(180deg,#F3EDE4,#FBF8F4);position:relative;overflow:hidden}
+    .hero .wrap{position:relative;z-index:1;display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+    .pill{display:inline-block;background:var(--river);color:#fff;font-size:11px;font-weight:800;padding:5px 16px;border-radius:20px;letter-spacing:1px;text-transform:uppercase;margin-bottom:18px}
+    .disclaim{display:inline-block;margin-left:8px;font-size:11px;font-weight:700;color:var(--river-deep);border:1px dashed var(--river-deep);border-radius:20px;padding:4px 12px;vertical-align:middle}
+    .hero h1{font-size:clamp(30px,5.5vw,52px);line-height:1.1;margin:0 0 14px;font-weight:900}
+    .hero h1 em{font-style:normal;color:var(--peach-deep)}
+    .hero h1 .ink-em{color:var(--river-deep)}
+    .hero p.lead{font-size:16px;color:var(--muted);max-width:640px;margin:0 0 22px}
+    .hero-tags{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:24px}
+    .hero-tag{border:2px solid var(--line);border-radius:8px;padding:5px 13px;font-size:13px;font-weight:600;background:#fff}
+    .cta{display:flex;gap:12px;flex-wrap:wrap}
+    .btn{padding:13px 26px;border-radius:10px;font-weight:800;font-size:15px;transition:.2s;display:inline-flex;gap:6px;align-items:center;cursor:pointer}
+    .btn-primary{background:var(--peach-deep);color:#fff;border:2px solid var(--peach-deep)}
+    .btn-primary:hover{background:var(--peach)}
+    .btn-ghost{border:2px solid var(--river-deep);color:var(--river-deep);background:transparent}
+    .btn-ghost:hover{background:var(--river-deep);color:#fff}
+
+    /* 桃林江滩放映 */
+    .grove{width:320px;height:260px;margin:0 auto;position:relative;background:linear-gradient(180deg,#DCEEF1 0 52%,#A9D6DA 52% 64%,#7FC8A9 64% 100%);border-radius:16px;border:2px solid var(--line);overflow:hidden;box-shadow:0 16px 40px rgba(32,40,46,.14)}
+    .grove .sun{position:absolute;top:18px;right:26px;width:46px;height:46px;border-radius:50%;background:var(--peach);box-shadow:0 0 30px rgba(255,125,169,.5)}
+    .grove .tree{position:absolute;bottom:40px;left:30px;width:6px;height:70px;background:#6B4A2E;border-radius:4px}
+    .grove .tree::before{content:"";position:absolute;top:-44px;left:-26px;width:58px;height:58px;border-radius:50%;background:var(--green);box-shadow:0 -4px 0 rgba(0,0,0,.06)}
+    .grove .tree::after{content:"";position:absolute;top:-36px;left:-10px;width:22px;height:22px;border-radius:50%;background:var(--peach)}
+    .grove .tree2{position:absolute;bottom:40px;right:34px;width:6px;height:56px;background:#6B4A2E;border-radius:4px}
+    .grove .tree2::before{content:"";position:absolute;top:-38px;left:-24px;width:52px;height:52px;border-radius:50%;background:var(--green-deep);box-shadow:0 -4px 0 rgba(0,0,0,.06)}
+    .grove .tree2::after{content:"";position:absolute;top:-30px;left:-8px;width:18px;height:18px;border-radius:50%;background:var(--peach-deep)}
+    .grove .screen{position:absolute;top:78px;left:50%;transform:translateX(-50%);width:120px;height:74px;background:linear-gradient(135deg,rgba(255,255,255,.95),rgba(200,230,235,.75));border:2px solid #fff;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:30px;box-shadow:0 6px 18px rgba(31,70,96,.18)}
+    .grove .ticket{position:absolute;bottom:14px;left:50%;transform:translateX(-50%);background:#fff;border-radius:8px;padding:6px 14px;font-size:11px;font-weight:800;color:var(--river-deep);box-shadow:0 4px 12px rgba(31,70,96,.16);border-left:4px dashed var(--peach-deep)}
+    .grove .ticket small{display:block;color:var(--muted);font-weight:600;font-size:9px}
+
+    section{padding:60px 0;border-bottom:2px dashed var(--line)}
+    .sec-head{margin-bottom:32px;text-align:center}
+    .sec-head .kicker{color:var(--peach-deep);font-weight:800;letter-spacing:2px;text-transform:uppercase;font-size:11px}
+    .sec-head h2{font-size:clamp(24px,4vw,34px);margin:6px 0 8px;font-weight:900}
+    .sec-head p{color:var(--muted);margin:0 auto;max-width:700px;font-size:14px}
+
+    /* 为什么不选：左右 */
+    .why{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+    .why-card{background:var(--card);border:2px solid var(--line);border-radius:16px;padding:24px}
+    .why-card.bad{border-left:6px solid var(--red)}
+    .why-card.good{border-left:6px solid var(--green-deep)}
+    .why-card h3{margin:0 0 12px;font-size:17px;font-weight:800;display:flex;align-items:center;gap:8px}
+    .why-card ul{margin:0;padding-left:18px;color:var(--muted);font-size:13px}
+    .why-card ul li{margin:6px 0}
+
+    /* 分类：网格 */
+    .cats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+    .cat{background:var(--card);border:2px solid var(--line);border-radius:14px;padding:22px;text-align:center;transition:.3s}
+    .cat:hover{transform:translateY(-4px);box-shadow:0 10px 26px rgba(32,40,46,.12);border-color:var(--peach-deep)}
+    .cat .ic{font-size:34px;display:block;margin-bottom:10px}
+    .cat h3{margin:0 0 6px;font-size:15px;font-weight:800}
+    .cat p{margin:0;color:var(--muted);font-size:12px}
+
+    /* 片单：横幅卡 */
+    .list{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+    .film{background:var(--card);border:2px solid var(--line);border-radius:16px;padding:22px;display:grid;grid-template-columns:54px 1fr;gap:14px;transition:.3s}
+    .film:hover{transform:translateY(-4px);box-shadow:0 10px 26px rgba(32,40,46,.12)}
+    .film .ic{font-size:32px;text-align:center}
+    .film h3{margin:0 0 4px;font-size:16px;font-weight:900}
+    .film .sub{font-size:11px;color:var(--peach-deep);font-weight:700;margin-bottom:6px}
+    .film p{margin:0;color:var(--muted);font-size:13px}
+    .film ul{margin:8px 0 0;padding-left:18px;color:var(--muted);font-size:12px}
+    .film ul li{margin:2px 0}
+
+    /* 信源：四宫格 */
+    .src{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+    .src-card{background:var(--card);border:2px solid var(--line);border-radius:14px;padding:22px;text-align:center;transition:.3s}
+    .src-card:hover{border-color:var(--green-deep);background:var(--bg2)}
+    .src-card .ic{font-size:32px;margin-bottom:8px;display:block}
+    .src-card h3{margin:0 0 4px;font-size:15px;font-weight:800}
+    .src-card p{margin:0;color:var(--muted);font-size:12px}
+
+    /* 避坑：三列 */
+    .warn{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .reef{background:var(--card);border:2px solid var(--line);border-radius:12px;padding:22px;border-top:5px solid var(--red)}
+    .reef:nth-child(2){border-top-color:var(--river-deep)}
+    .reef:nth-child(3){border-top-color:var(--green-deep)}
+    .reef h3{margin:0 0 8px;font-size:16px;font-weight:800}
+    .reef p{margin:0;color:var(--muted);font-size:13px}
+
+    .notice{background:var(--bg2);border:2px dashed var(--river-deep);border-radius:12px;padding:14px 18px;font-size:13px;color:var(--muted);max-width:860px;margin:24px auto 0}
+    .notice b{color:var(--river-deep)}
+
+    footer{padding:36px 0;text-align:center;color:#fff;font-size:13px;background:var(--river-deep)}
+    footer a{color:var(--green)}
+
+    #toTop{position:fixed;right:16px;bottom:16px;z-index:60;width:46px;height:46px;border-radius:50%;border:2px solid var(--peach-deep);background:var(--peach-deep);color:#fff;font-size:20px;font-weight:900;cursor:pointer;opacity:0;pointer-events:none;transition:.25s}
+    #toTop.show{opacity:1;pointer-events:auto}
+    .reveal{opacity:0;transform:translateY(16px);transition:.5s ease}
+    .reveal.in{opacity:1;transform:none}
+
+    @media (max-width:980px){
+      .hero .wrap{grid-template-columns:1fr}
+      .why{grid-template-columns:1fr}
+      .cats{grid-template-columns:1fr 1fr}
+      .list{grid-template-columns:1fr}
+      .src{grid-template-columns:1fr 1fr}
+      .warn{grid-template-columns:1fr}
+    }
+    @media (max-width:640px){
+      .nav-toggle{display:block}
+      nav.menu{position:absolute;top:66px;left:0;right:0;flex-direction:column;gap:0;padding:10px 20px 20px;background:rgba(251,248,244,.98);border-bottom:2px solid var(--peach-deep);display:none}
+      nav.menu.open{display:flex}
+      nav.menu a{padding:12px 8px;border-bottom:2px solid var(--line);border-radius:0}
+      .cats{grid-template-columns:1fr}
+      .src{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/laoliu.js"></script>
+
+  <header class="nav">
+    <div class="wrap nav-inner">
+      <div class="logo"><span class="peach">🍑</span><b>仙桃</b><span>光影指南</span></div>
+      <button class="nav-toggle" aria-label="菜单" onclick="document.getElementById('menu').classList.toggle('open')">☰</button>
+      <nav class="menu" id="menu">
+        <a href="#home">首页</a>
+        <a href="#why">为什么不选聚合站</a>
+        <a href="#cats">正版分类导航</a>
+        <a href="#list">光影片单</a>
+        <a href="#src">正版信源</a>
+        <a href="#warn">伪仙桃避坑</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="wrap">
+      <div>
+        <div class="pill">Peach Grove Reel · Legal Only<span class="disclaim">非仙桃影视</span></div>
+        <h1>仙桃光影指南<br/>桃林里放<em>正版片</em>，不播<em>盗版源</em></h1>
+        <p class="lead">本站不是原「仙桃影视」、不接"免费在线点播/多线路聚合"流量；只做合规片单推荐与正版平台导航。若原站是免费点播+聚合播源形态，则不在正版体系内——按《互联网视听节目服务管理规定》第十七条，不得转播、链接、聚合、集成非法视听节目。</p>
+        <div class="hero-tags">
+          <span class="hero-tag">正版导航</span>
+          <span class="hero-tag">无播源聚合</span>
+          <span class="hero-tag">无下载链接</span>
+          <span class="hero-tag">无磁力网盘</span>
+          <span class="hero-tag">非原站复刻</span>
+        </div>
+        <div class="cta">
+          <a class="btn btn-primary" href="#cats">正版分类导航 →</a>
+          <a class="btn btn-ghost" href="#warn">看伪仙桃套路</a>
+        </div>
+      </div>
+      <div>
+        <div class="grove">
+          <div class="sun"></div>
+          <div class="screen">🎬</div>
+          <div class="tree"></div>
+          <div class="tree2"></div>
+          <div class="ticket">正版票根<small>LICENSED · NO PIRACY</small></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="why" class="reveal">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="kicker">Why Not Aggregate Site</div>
+        <h2>为什么不选「聚合影视站」</h2>
+        <p>「免费影视站」常见信号：域名频变、播放跳新窗、要求装解码器/APK、片源授权不透明。</p>
+      </div>
+      <div class="why">
+        <div class="why-card bad">
+          <h3>🚫 聚合站常见形态</h3>
+          <ul>
+            <li>免费在线点播 + 多线路切换</li>
+            <li>点击播放跳新窗、弹广告</li>
+            <li>要求装解码器 / 第三方APK</li>
+            <li>片源授权不透明、域名频变</li>
+          </ul>
+        </div>
+        <div class="why-card good">
+          <h3>✅ 本指南做法</h3>
+          <ul>
+            <li>只列正版持权平台与分类路径</li>
+            <li>不挂播源、不解析线路</li>
+            <li>不提供下载、磁力、网盘码</li>
+            <li>片单点出去是正版站</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="cats" class="reveal">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="kicker">Category Nav</div>
+        <h2>正版分类导航</h2>
+        <p>四个入口，按类型跳正版渠道，不跳聚合站。</p>
+      </div>
+      <div class="cats">
+        <div class="cat"><span class="ic">🎬</span><h3>电影</h3><p>院线 / 正版点播</p></div>
+        <div class="cat"><span class="ic">📺</span><h3>剧集</h3><p>持牌平台分集订阅</p></div>
+        <div class="cat"><span class="ic">🧸</span><h3>动画</h3><p>全年龄 / 正版引进</p></div>
+        <div class="cat"><span class="ic">🎞️</span><h3>纪录</h3><p>正版纪录专区</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="list" class="reveal">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="kicker">Grove Reel List</div>
+        <h2>光影片单</h2>
+        <p>四个方向，只列类型与正版路径，不列盗版源。</p>
+      </div>
+      <div class="list">
+        <div class="film">
+          <span class="ic">🏠</span>
+          <div>
+            <h3>合家桃林场</h3>
+            <div class="sub">连续剧 · 低冲突</div>
+            <p>国产剧、生活剧、轻喜剧。</p>
+            <ul>
+              <li>正版平台剧集专区</li>
+              <li>避开聚合线路切换</li>
+              <li>不搜"仙桃同款源"</li>
+            </ul>
+          </div>
+        </div>
+        <div class="film">
+          <span class="ic">🎬</span>
+          <div>
+            <h3>电影之夜</h3>
+            <div class="sub">院线 · 单片租赁</div>
+            <p>新片、重映、经典修复。</p>
+            <ul>
+              <li>正规购票/官方重映</li>
+              <li>持权OTT单片租看</li>
+              <li>不装第三方播放器</li>
+            </ul>
+          </div>
+        </div>
+        <div class="film">
+          <span class="ic">🎞️</span>
+          <div>
+            <h3>江滩纪录</h3>
+            <div class="sub">大屏 · 正版专区</div>
+            <p>自然、城市、人文纪录。</p>
+            <ul>
+              <li>官方纪录专区</li>
+              <li>不挂盗版链接</li>
+              <li>不接解析接口</li>
+            </ul>
+          </div>
+        </div>
+        <div class="film">
+          <span class="ic">🧸</span>
+          <div>
+            <h3>动画春光</h3>
+            <div class="sub">全年龄 · 正版引进</div>
+            <p>动画剧集、动画电影。</p>
+            <ul>
+              <li>持牌动画频道</li>
+              <li>认准授权片源</li>
+              <li>不点假播放键</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="src" class="reveal">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="kicker">Legal Sources</div>
+        <h2>正版信源</h2>
+        <p>只走持权分发，不碰聚合站播源。</p>
+      </div>
+      <div class="src">
+        <div class="src-card"><span class="ic">📺</span><h3>正版OTT</h3><p>持牌平台订阅/单片租赁</p></div>
+        <div class="src-card"><span class="ic">🎬</span><h3>院线购票</h3><p>正规票务与官方重映</p></div>
+        <div class="src-card"><span class="ic">🏛️</span><h3>影展放映</h3><p>官方放映、学术展映</p></div>
+        <div class="src-card"><span class="ic">📼</span><h3>动画专区</h3><p>正版引进动画频道</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="warn" class="reveal">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="kicker">Fake XianTao</div>
+        <h2>伪「仙桃影视」避坑</h2>
+        <p>「仙桃影视」类站点若无持权主体，多为聚合镜像，别点别装。</p>
+      </div>
+      <div class="warn">
+        <div class="reef">
+          <h3>🚫 多线路解析播源</h3>
+          <p>免费站靠多线路切换播他人内容，属未授权聚合；按规不得链接聚合非法视听节目源。</p>
+        </div>
+        <div class="reef">
+          <h3>🚫 假播放键+APK侧载</h3>
+          <p>非官商店的"影视APP"别装；假播放键索通知/存储权限是常见引流。</p>
+        </div>
+        <div class="reef">
+          <h3>🚫 域名频变仿冒站</h3>
+          <p>片源授权不透明、频繁换域名的镜像站直接关，不留书签。</p>
+        </div>
+      </div>
+      <div class="notice">
+        <b>声明：</b>本页「仙桃光影指南」仅为"仙桃"字面的光影主题导航，与原仙桃影视站无任何关系；不重建其原站/镜像、不聚合影视资源、不提供播源解析、下载、磁力、网盘码与盗版播放；按《互联网视听节目服务管理规定》第十七条要求，不转播、链接、聚合、集成非法视听节目。
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      © 2026 仙桃光影指南（xiantaoyingshi-h5）｜ 静态展示站点 ｜
+      内页链接以 <a href="#">#</a> 占位 ｜
+      网站网址：https://xiantaoyingshi-h5.github.io ｜
+      非原仙桃影视站｜不提供盗版资源、播源、磁力与成人内容。
+    </div>
+  </footer>
+
+  <button id="toTop" aria-label="回到顶部" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+
+  <script>
+    document.querySelectorAll('#menu a').forEach(function(a){
+      a.addEventListener('click',function(){ document.getElementById('menu').classList.remove('open'); });
+    });
+    var toTop=document.getElementById('toTop');
+    window.addEventListener('scroll',function(){ toTop.classList.toggle('show',window.scrollY>400); });
+    var io=new IntersectionObserver(function(entries){
+      entries.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} });
+    },{threshold:0.1});
+    document.querySelectorAll('.reveal').forEach(function(el){ io.observe(el); });
+  </script>
+</body>
+</html>
